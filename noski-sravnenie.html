@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Носки КМФ78 — Сравнительная таблица</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #0f0f0f;
+    --surface: #1a1a1a;
+    --border: #2e2e2e;
+    --accent: #c8a84b;
+    --accent2: #4b9ec8;
+    --green: #4bc87a;
+    --red: #c84b4b;
+    --olive: #8aaa4b;
+    --text: #e8e8e8;
+    --muted: #888;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    padding: 32px 24px;
+    min-height: 100vh;
+  }
+
+  header {
+    margin-bottom: 28px;
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
+  }
+
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  header p {
+    color: var(--muted);
+    margin-top: 4px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+  }
+
+  thead th {
+    background: var(--surface);
+    padding: 14px 16px;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+  }
+
+  thead th:first-child {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 150px;
+  }
+
+  .col-remington { color: #c8a84b; }
+  .col-comfort   { color: #4b9ec8; }
+  .col-splav     { color: #c84b9e; }
+  .col-coolmax   { color: #4bc87a; }
+  .col-combat    { color: #8aaa4b; }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+
+  tbody td {
+    padding: 12px 16px;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  tbody td:first-child {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.02);
+  }
+
+  .row-highlight td { background: rgba(255,255,255,0.02); }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 1px 0;
+  }
+
+  .tag-green  { background: rgba(75,200,122,0.15); color: #4bc87a; }
+  .tag-yellow { background: rgba(200,168,75,0.15);  color: #c8a84b; }
+  .tag-red    { background: rgba(200,75,75,0.15);   color: #c84b4b; }
+  .tag-blue   { background: rgba(75,158,200,0.15);  color: #4b9ec8; }
+  .tag-gray   { background: rgba(136,136,136,0.15); color: #888; }
+
+  .price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .recommend {
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .divider-row td {
+    padding: 8px 16px 4px;
+    background: var(--surface);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .verdict {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+
+  .verdict-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  .verdict-card .v-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .verdict-card .v-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .verdict-card .v-text {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Сравнение носков</h1>
+  <p>КМФ78 · ШПАРГАЛКА ДЛЯ ПРОДАВЦА</p>
+</header>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th class="col-remington">Remington<br>Termo Socks</th>
+      <th class="col-comfort">Comfort<br>Tracking</th>
+      <th class="col-splav">Сплав<br>Energy</th>
+      <th class="col-coolmax">NordKapp<br>Coolmax</th>
+      <th class="col-combat">Сплав<br>Combat</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr class="divider-row"><td colspan="6">ОСНОВНОЕ</td></tr>
+
+    <tr>
+      <td>Цена</td>
+      <td><span class="price col-remington">430 ₽</span></td>
+      <td><span class="price col-comfort">500 ₽</span></td>
+      <td><span class="price col-splav">690 ₽</span></td>
+      <td><span class="price col-coolmax">690–990 ₽</span></td>
+      <td><span class="price col-combat">380 ₽</span></td>
+    </tr>
+
+    <tr>
+      <td>Назначение</td>
+      <td>Город, повседневная носка</td>
+      <td>Треккинг, активный отдых, прохладная погода</td>
+      <td>Бег, тренировки, фитнес</td>
+      <td>Треккинг, походы, интенсивная нагрузка</td>
+      <td>Берцы, тактика, рыбалка, охота — любая активность в грубой обуви</td>
+    </tr>
+
+    <tr>
+      <td>Активность</td>
+      <td><span class="tag tag-yellow">Низкая / Средняя</span></td>
+      <td><span class="tag tag-blue">Средняя / Высокая</span></td>
+      <td><span class="tag tag-green">Высокая</span></td>
+      <td><span class="tag tag-green">Любая</span></td>
+    </tr>
+
+    <tr>
+      <td>Темп-ра комфорта</td>
+      <td>0°С … +20°С</td>
+      <td>−15°С … +15°С</td>
+      <td>Без указания<br><span style="color:var(--muted);font-size:11px">тепло не держат</span></td>
+      <td>−15°С … +15°С<br><span style="color:var(--muted);font-size:11px">(зависит от модели)</span></td>
+      <td>Не указан<br><span style="color:var(--muted);font-size:11px">влагоотведение работает при любой темп-ре</span></td>
+    </tr>
+
+    <tr class="divider-row"><td colspan="6">МАТЕРИАЛ</td></tr>
+
+    <tr>
+      <td>Состав</td>
+      <td>80% хлопок<br>17% полиэстер<br>3% эластан</td>
+      <td>60% хлопок<br>20% полипропилен<br>10% полиэфир<br>10% эластан</td>
+      <td>88% полиамид<br>7% полиэстер<br>5% эластан</td>
+      <td>~65% Coolmax<br>~20% акрил<br>~15% эластан</td>
+      <td>97% полиамид<br>3% эластан</td>
+    </tr>
+
+    <tr>
+      <td>Влагоотведение</td>
+      <td><span class="tag tag-red">Слабое</span><br><span style="color:var(--muted);font-size:11px">хлопок удерживает влагу</span></td>
+      <td><span class="tag tag-blue">Хорошее</span><br><span style="color:var(--muted);font-size:11px">полипропилен не впитывает воду</span></td>
+      <td><span class="tag tag-green">Отличное</span><br><span style="color:var(--muted);font-size:11px">полиамид — быстрое высыхание</span></td>
+      <td><span class="tag tag-green">Отличное</span><br><span style="color:var(--muted);font-size:11px">Coolmax — специализированное волокно</span></td>
+      <td><span class="tag tag-green">Отличное</span><br><span style="color:var(--muted);font-size:11px">97% полиамид — максимум отвода и быстрое высыхание</span></td>
+    </tr>
+
+    <tr>
+      <td>Теплоудержание</td>
+      <td><span class="tag tag-yellow">Среднее</span></td>
+      <td><span class="tag tag-blue">Хорошее</span></td>
+      <td><span class="tag tag-gray">Слабое</span></td>
+      <td><span class="tag tag-yellow">Среднее</span></td>
+      <td><span class="tag tag-gray">Слабое</span></td>
+    </tr>
+
+    <tr class="divider-row"><td colspan="6">КОНСТРУКЦИЯ</td></tr>
+
+    <tr>
+      <td>Шов</td>
+      <td>Обычный</td>
+      <td><span class="tag tag-blue">Плоский</span></td>
+      <td><span class="tag tag-green">Бесшовный</span></td>
+      <td><span class="tag tag-blue">Плоский</span></td>
+      <td>Обычный</td>
+    </tr>
+
+    <tr>
+      <td>Усиление</td>
+      <td>—</td>
+      <td>Носок и пятка усилены полиамидом</td>
+      <td>Износостойкие зоны</td>
+      <td>Носок и пятка усилены</td>
+      <td>Петельные зоны на пальцах, подошве, пятке, лодыжке</td>
+    </tr>
+
+    <tr>
+      <td>Доп. функции</td>
+      <td>—</td>
+      <td>Поддержка голеностопа и подъёма<br>Антибактериальные</td>
+      <td>Зоны плотности для кровообращения<br>Снижение усталости мышц</td>
+      <td>Поддержка голеностопа<br>(зависит от модели)</td>
+      <td>Оптимальная длина под берцы<br>Олива — не демаскирует</td>
+    </tr>
+
+    <tr class="divider-row"><td colspan="6">КМУ ПРОДАВАТЬ</td></tr>
+
+    <tr>
+      <td>Целевой покупатель</td>
+      <td class="recommend">Покупает повседневную обувь или сапоги ЭВА. Не планирует серьёзной активности</td>
+      <td class="recommend">Берёт берцы, трекинговые ботинки. Планирует походы, охоту, рыбалку в прохладную погоду</td>
+      <td class="recommend">Интересуется бегом, фитнесом. Берёт кроссовки или лёгкую спортивную обувь</td>
+      <td class="recommend">Опытный турист, многодневные походы, активная нагрузка. Готов платить за качество</td>
+      <td class="recommend">Берёт берцы или тактическую обувь. Нужна надёжность и влагоотведение без переплат</td>
+    </tr>
+
+    <tr>
+      <td>Ключевой аргумент</td>
+      <td>«Мягкие, тёплые, не сдавливают — идеальны на каждый день»</td>
+      <td>«Нога остаётся сухой и тёплой даже при движении, плоский шов — без натёртостей»</td>
+      <td>«Бесшов, быстрое высыхание, зоны поддержки — нога не устаёт при тренировках»</td>
+      <td>«Coolmax — лучший отвод влаги на рынке, проверен профессионалами»</td>
+      <td>«97% полиамид, петельные зоны защищают от натирания в грубых берцах — и всё это за 380 ₽»</td>
+    </tr>
+
+    <tr>
+      <td>Не рекомендовать</td>
+      <td><span class="tag tag-red">Поход в берцах</span><br><span class="tag tag-red">Зимняя рыбалка</span></td>
+      <td><span class="tag tag-red">Бег и фитнес</span><br><span class="tag tag-red">Жаркая погода</span></td>
+      <td><span class="tag tag-red">Холод и мороз</span><br><span class="tag tag-red">Длительный поход</span></td>
+      <td><span class="tag tag-red">Статичная нагрузка на морозе</span></td>
+      <td><span class="tag tag-red">Сильный мороз</span><br><span class="tag tag-red">Бег и фитнес</span></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<div class="verdict">
+  <div class="verdict-card">
+    <div class="v-label">Для города</div>
+    <div class="v-name col-remington">Remington Termo Socks</div>
+    <div class="v-text">Повседневная носка, лёгкие прогулки, сапоги ЭВА. Бюджетный вариант для допродажи к любой обуви.</div>
+  </div>
+  <div class="verdict-card">
+    <div class="v-label">Для похода и охоты</div>
+    <div class="v-name col-comfort">Comfort Tracking</div>
+    <div class="v-text">Лучший выбор к берцам и трекингу в прохладную погоду. Тепло + влагоотведение + плоский шов.</div>
+  </div>
+  <div class="verdict-card">
+    <div class="v-label">Для бега и спорта</div>
+    <div class="v-name col-splav">Сплав Energy</div>
+    <div class="v-text">К кроссовкам и спортивной обуви. Бесшовные, быстросохнущие, со спортивными зонами поддержки.</div>
+  </div>
+  <div class="verdict-card">
+    <div class="v-label">Для серьёзного туризма</div>
+    <div class="v-name col-coolmax">NordKapp Coolmax</div>
+    <div class="v-text">Максимальный отвод влаги при интенсивной нагрузке. Выбор опытного туриста и тактического покупателя.</div>
+  </div>
+  <div class="verdict-card">
+    <div class="v-label">Бюджет под берцы</div>
+    <div class="v-name col-combat">Сплав Combat</div>
+    <div class="v-text">Самые дешёвые с реальным влагоотведением. Олива, петельные зоны защиты — идеал для берцев и тактики.</div>
+  </div>
+</div>
+
+</body>
+</html>
